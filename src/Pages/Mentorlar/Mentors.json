@@ -1,0 +1,58 @@
+{
+    "Mentors":[
+        {
+            "id": 1 ,
+            "mentor-name":"Javohir Yusupov",
+            "mentor-job":"Frontend dasturchi",
+            "img": "https://iqtidor.uicgroup.tech/media/mentor/2024/04/17/javoxir.webp"
+        },
+        {
+            "id": 2,
+            "mentor-name":"Juraef Abdufattox",
+            "mentor-job":"SMM",
+            "img": "https://iqtidor.uicgroup.tech/media/mentor/2024/04/17/abdufattox.webp"
+        },
+        {
+            "id": 3 ,
+            "mentor-name":"Bekmuhammad Mamadiev",
+            "mentor-job":"Kampyuter savodxonlik",
+            "img": "https://iqtidor.uicgroup.tech/media/mentor/2024/04/17/bekmuhammad.webp"
+        },
+        {
+            "id": 4,
+            "mentor-name":"Inomjon Ashurov",
+            "mentor-job":"IT Foundation",
+            "img": "https://iqtidor.uicgroup.tech/media/mentor/2024/04/17/inomjon1.webp"
+        },
+        {
+            "id": 5,
+            "mentor-name":"Sardorbek Rahmonov",
+            "mentor-job":"3Ds Max",
+            "img": "https://iqtidor.uicgroup.tech/media/mentor/2024/04/27/sardor-aka.webp"
+        },
+        {
+            "id": 6,
+            "mentor-name":"Faxriddin Primov",
+            "mentor-job":"Kampyuter Savodxonlik",
+            "img": "https://iqtidor.uicgroup.tech/media/mentor/2024/04/27/faxriddinAka.webp"
+        },
+        {
+            "id": 7,
+            "mentor-name":"G`ayrat Parmonov",
+            "mentor-job":"It uchun ingliz tili",
+            "img": "https://iqtidor.uicgroup.tech/media/mentor/2024/04/27/gayrat-aka.webp"
+        },
+        {
+            "id": 8,
+            "mentor-name":"No name",
+            "mentor-job":"Mobile Dasturlash",
+            "img": "https://iqtidor.uicgroup.tech/media/mentor/2024/05/01/mentors.webp"
+        },
+        {
+            "id": 9,
+            "mentor-name":"Suvonqulov Sarvarbek",
+            "mentor-job":"Grafik Dizayn",
+            "img": "https://iqtidor.uicgroup.tech/media/mentor/2024/04/17/7.webp"
+        }
+    ]
+}

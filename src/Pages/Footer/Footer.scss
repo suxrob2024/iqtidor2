@@ -1,0 +1,91 @@
+:root{
+    --LightMode: white;
+    --DarkMode: rgb(0, 0, 0);
+    --BodyColor: rgb(27, 26, 26);
+    --textColor: rgb(19, 18, 18);
+    --T2Color:rgb(226, 118, 30);
+    --shadowColor: rgb(255, 238, 0);
+    --LightSky:rgb(0, 195, 255);
+    --lightT2color:#ff9100;
+}
+.footerpage{
+    background-color: var(--LightMode);
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    .footer{
+        padding-bottom:10px;
+        width: 100%;
+        margin: auto;
+        height: 300px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url(./Bgimg/footer_bg.png);
+        .end {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, 359px);
+            align-items: center;
+            padding-top: 30px;
+            justify-content: space-around;
+            .altrik{
+                // border: 1px solid saddlebrown;
+                height: 250px;
+                border-radius: 20px;
+                                
+                display: flex;
+                flex-direction: column;
+                padding: 10px;
+                align-items: start;
+                justify-content: space-around;
+                line-height: 20px;
+
+                .logo_end{
+                    align-items: start;
+                    width: 150px;
+                    height: 100px;
+                }
+                .text3{
+                    width: 200px;
+                    font-size: 18px;
+                }
+                .text2{
+                    font-size: 18px;
+                }
+
+                .alnks{
+                    width: 100%;
+                    list-style: none;
+                    // color: #ff9100;
+                    display: flex;
+
+                    gap: 20px;
+                }
+                .infopagesall{
+                    padding-left: 30px;
+                    width: 300px;
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                    .inthe{
+                        padding-left: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+.footerpage .dark-mode{
+    background-color: var(--BodyColor);
+    color: var(--LightMode);
+}
+
+@media (max-width: 500px){
+    .footerpage{
+        #kurslar{
+            font-size: 30px;
+            color: var(--LightSky);
+            text-shadow: 0 0 20px;
+        }
+    }
+}

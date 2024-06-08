@@ -1,0 +1,13 @@
+{
+    "Abought":[
+        {
+            "text1": "Iqtidor education o‘quv markazi tashkil topshiga eng asosiy sabab bu O‘zbekston davlatida IT sohasiga bo‘lgan talab kuchayib borayotgani hamda bu sanoat tarmog‘idagi mutaxassislar yetishmovchiligi asosiy sabab bo‘lgan.",
+            "text2":"Markazning maqsadi - IT sohasini har bir yo‘nalishi bo‘ycha yetuk va mukammal tajribga ega bo‘lgan mutaxassislarni yetishtirib chiqarish. Bizning markazimizda sizni nafaqat akademik ta‘lim balki amaliy tajribalardan tortib o‘z sohasi yetuk mutaxassislaridan master-klass dasturlari kurmoqda. Bundan tashqari sizlar uchun open-space yartilgan bo‘lib sizlar darsdan tashqari markazning o‘zida o‘tirib boshqa gurug o‘quvchilari bilan birga ishlash yani tajriba almashish bilan cheklanib qolmay IT yo‘nalishining u yoki bu soha vakillaridan ko‘plab do‘stlar ortirishingiz mumkin.",
+            "logo1":"./src/assets/logo.darkmode.png",
+            "logo2":"./src/assets/lightmode.logo.png",
+            "img1":"https://iqtidoracademy.uz/images/center-photo-1.svg",
+            "img2":"https://iqtidoracademy.uz/images/center-photo-2.svg",
+            "img3":"https://iqtidoracademy.uz/images/center-photo-circles.svg"
+        }
+    ]
+}

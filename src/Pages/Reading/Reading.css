@@ -1,0 +1,156 @@
+:root {
+  --LightMode: white;
+  --DarkMode: rgb(0, 0, 0);
+  --BodyColor: rgb(27, 26, 26);
+  --textColor: rgb(19, 18, 18);
+  --T2Color: rgb(226, 118, 30);
+  --shadowColor: rgb(255, 238, 0);
+  --LightSky: rgb(0, 195, 255);
+  --lightT2color: #ff9100;
+}
+
+.Sectr {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  height: 100%;
+}
+
+.ky {
+  margin-top: 50px;
+  font-size: 30px;
+  color: var(--DarkMode);
+}
+.ky.dark-mode{
+  color: var(--LightSky);
+  text-shadow: 0 0 20px;
+}
+.intigration_bar {
+  display: flex;
+  margin-top: 58px;
+  width: 90%;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.kurslar_check {
+  display: grid;
+  cursor: pointer;
+  padding-bottom: 60px;
+  justify-content: center;
+  width: 100%;
+  gap: 40px;
+  height: 100%;
+  grid-template-columns: repeat(auto-fit, 150px);
+}
+
+.chec {
+  padding: 10px 10px;
+  background-color: var(--T2Color);
+  border-radius: 10px 20px;
+  height: 100px;
+  display: flex;
+  gap: 5px;
+}
+
+
+.chec.checked {
+  background-color: chartreuse;
+}
+
+.chec.dark-mode.checked {
+  background-color: var(--T2Color);
+}
+
+.kurslar2 .img_kurs2 {
+  width: 60px;
+  height: 60px;
+}
+
+.kurslar2 .kurs_text2 {
+  font-size: 15px;
+}
+
+.chekbox {
+  display: none;
+}
+
+.user {
+  border-radius: 20px 20px 0px 0px;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  padding-bottom: 30px;
+  gap: 30px;
+  justify-content: space-around;
+  background-color: #ff9100;
+}
+
+.user_write .user_name,
+.user_call .user_tell {
+  width: 300px;
+  padding: 20px 10px;
+  border-radius: 15px;
+  border: 1px solid;
+}
+
+.user_write .user_n,
+.user_call .user_n {
+  padding-bottom: 5px;
+  font-size: 20px;
+}
+
+.Send {
+  padding: 10px 30px;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.Send:hover {
+  background-color: var(--LightSky);
+  transform: scale(1.02);
+  border-radius: 30px;
+}
+
+@media (max-width: 900px) {
+  .Sectr .intigration_bar {
+    width: 100%;
+  }
+
+  .user {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .user_write .user_name,
+  .user_call .user_tell {
+    width: 300px;
+  }
+
+  .Send {
+    transform: scale(1.10);
+  }
+}
+
+@media (max-width: 600px) {
+  .Sectr .intigration_bar {
+    width: 100%;
+  }
+
+  .user {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .user_write .user_name,
+  .user_call .user_tell {
+    width: 200px;
+  }
+}

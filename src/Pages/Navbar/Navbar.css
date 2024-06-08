@@ -1,0 +1,218 @@
+:root {
+    --mainColor: rgb(226, 118, 30);
+    --mainColorLight: rgba(23, 106, 231, 0.904);
+    --textColor: black;
+    --secondaryColor: rgb(255, 187, 0);
+    --lightMode: white;
+}
+
+header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--mainColor);
+    color: var(--textColor);
+    padding: 10px;
+}
+
+.header.dark-mode {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+nav a {
+    color: var(--textColor);
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+nav a:hover {
+    color: var(--secondaryColor);
+}
+
+.nav-btn {
+    display: none;
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    overflow: hidden;
+}
+.Sun{
+    background-color: rgb(238, 255, 0);
+    border-radius: 90px;
+    box-shadow: 0 0 50px yellow;
+}
+.Moon{
+    background-color: rgb(238, 255, 0);
+    border-radius: 90px;
+    box-shadow: 0 0 5px yellow;
+}
+.navbar li {
+    float: left;
+    position: relative;
+}
+
+.dropbtn {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top: 14px;
+}
+
+.dropdown-content li {
+    float: none;
+    padding: 12px 16px;
+}
+
+.dropdown-content li a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content li a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.Toggle {
+    transition: all 0.5s;
+    background-color: rgba(255, 255, 255, 0);
+    width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 90px;
+    position: relative;
+}
+
+.Toggle input {
+    display: none;
+}
+
+.Toggle .Sun, .Toggle .Moon {
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.Toggle .Sun {
+    transform: rotate(0deg);
+    opacity: 1;
+}
+
+.Toggle .Moon {
+    transform: rotate(180deg);
+    opacity: 0;
+}
+
+.Toggle input:checked ~ .Sun {
+    transform: rotate(180deg);
+    opacity: 0;
+}
+
+.Toggle input:checked ~ .Moon {
+    transform: rotate(0deg);
+    opacity: 1;
+}
+
+nav {
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.kk2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+.k2 {
+    width: 30px;
+    height: 30px;
+}
+
+@media (max-width: 850px) {
+    .nav-btn {
+        display: block;
+    }
+    
+    .logo {
+        z-index: 1;
+        transform: scale(2);
+    }
+    
+    header nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        background-color: var(--mainColor);
+        transform: translateX(-200vh);
+    }
+    
+    nav button {
+        font-size: 30px;
+    }
+    
+    header .responsive_nav {
+        transition: 1s;
+        transform: none;
+        height: 450px;
+        width: 300px;
+    }
+}
+
+@media (max-width: 700px) {
+    .header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .btn3 {
+        display: block;
+    }
+    
+    .logo {
+        width: 80px;
+        transform: scale(1.4);
+    }
+}

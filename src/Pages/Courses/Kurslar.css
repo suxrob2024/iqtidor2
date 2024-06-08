@@ -1,0 +1,196 @@
+:root {
+  --LightMode: rgb(137, 217, 223);
+  --DarkMode: rgb(0, 0, 0);
+  --BodyColor: rgb(27, 26, 26);
+  --textColor: rgb(19, 18, 18);
+  --T2Color:rgb(226, 118, 30);
+  --shadowColor: rgb(255, 238, 0);
+  --LightSky:rgb(0, 195, 255);
+  --lightT2color:#ff9100;
+}
+
+.Kurslar {
+  width: 100%;
+  padding-bottom: 50px;
+  background-color: var(--LightMode);
+}
+.Kurslar .KKK {
+  display: flex;
+  align-items: center;
+}
+.Kurslar .KKK #Back {
+  padding: 20px 50px;
+  background-color: var(--lightT2color);
+  color: var(--DarkMode);
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  animation-name: slide;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  transition: 0.5s;
+}
+.Kurslar .KKK #Back:hover {
+  background-color: var(--DarkMode);
+  color: var(--LightSky);
+  text-shadow: 0 0 20px;
+}
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.Kurslar #kurslar {
+  font-size: 50px;
+  color: var(--LightSky);
+  text-shadow: 0 0 20px;
+  padding: 40px;
+}
+.Kurslar .menu_kurslar {
+  padding-left: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 200px);
+  gap: 20px 30px;
+}
+.Kurslar .menu_kurslar .kurs {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 50px;
+  justify-content: space-around;
+  gap: 30px;
+  background-color: var(--T2Color);
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.Kurslar .menu_kurslar .kurs .kurs_imgs {
+  border-style: dashed;
+  box-shadow: 0 0 30px var(--lightT2color);
+  border-color: var(--shadowColor);
+  text-shadow: 0 0 50px;
+  width: 80px;
+  height: 80px;
+  border-radius: 180px;
+  margin-top: 30px;
+}
+.Kurslar .menu_kurslar .kurs .text_kurs {
+  font-size: 15px;
+  text-shadow: 0 0 2px;
+  color: var(--DarkMode);
+}
+.Kurslar .menu_kurslar .kurs .text_kurs.dark-mode {
+  color: var(--LightMode);
+}
+.Kurslar .menu_kurslar .kurs:hover {
+  transform: scale(1.05);
+  background-color: 1;
+  box-shadow: 0 0 10px;
+}
+.Kurslar .Abought_Courses {
+  padding-top: 40px;
+  width: 100%;
+  height: auto;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.Kurslar .Abought_Courses .Kurslar_abought {
+  width: 100%;
+}
+.Kurslar .Abought_Courses .Kurslar_abought .all {
+  width: 1200px;
+  padding: 10px 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 500px);
+}
+.Kurslar .Abought_Courses .Kurslar_abought .all .kurs_img .kurs_icon {
+  width: 400px;
+  height: 400px;
+}
+.Kurslar .Abought_Courses .Kurslar_abought .all .kurs_abought {
+  display: flex;
+  flex-direction: column;
+  padding-left: 100px;
+  gap: 20px;
+  align-items: start;
+}
+.Kurslar .Abought_Courses .Kurslar_abought .all .kurs_abought .kurs_info {
+  padding-top: 20px;
+  font-size: 20px;
+  color: var(--DarkMode);
+}
+.Kurslar .Abought_Courses .Kurslar_abought .all .kurs_abought .kurs_info.dark-mode {
+  color: var(--LightMode);
+}
+.Kurslar .Abought_Courses .Kurslar_abought .all .kurs_abought .kurs_name {
+  color: var(--shadowColor);
+  text-shadow: 0px 0px 50px;
+  font-size: 20px;
+  padding: 30px 60px;
+  background-color: var(--DarkMode);
+  border-radius: 100px 0px 100px 0px;
+}
+.Kurslar .Abought_Courses .Kurslar_abought .all .kurs_abought .kursregister {
+  margin-top: 50px;
+  text-shadow: 0px 0px 50px;
+  font-size: 30px;
+  padding: 10px 60px;
+  background-color: var(--lightT2color);
+  animation-name: wobble;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+@keyframes wobble {
+  0% {
+    transform: translateX(0) rotate(0deg);
+  }
+  15% {
+    transform: translateX(-30px) rotate(-5deg);
+  }
+  30% {
+    transform: translateX(15px) rotate(3deg);
+  }
+  45% {
+    transform: translateX(-15px) rotate(-3deg);
+  }
+  60% {
+    transform: translateX(9px) rotate(2deg);
+  }
+  75% {
+    transform: translateX(-6px) rotate(-1deg);
+  }
+  100% {
+    transform: translateX(0) rotate(0deg);
+  }
+}
+.Kurslar .Abought_Courses .uquvkurslar {
+  padding-top: 50px;
+  width: 100%;
+  display: none;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+}
+.Kurslar .Abought_Courses .uquvkurslar .uquv {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 500px);
+  gap: 15px;
+}
+
+.Kurslar.dark-mode {
+  background-color: var(--BodyColor);
+  color: var(--LightMode);
+}
+
+@media (max-width: 425px) {
+  .menu_kurslar {
+    justify-content: center;
+  }
+}/*# sourceMappingURL=Kurslar.css.map */

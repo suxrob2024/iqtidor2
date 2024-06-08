@@ -1,0 +1,124 @@
+:root{
+    --LightMode: rgb(255, 255, 255);
+    --DarkMode: rgb(48, 46, 46);
+    --BodyColor: rgb(27, 26, 26);
+    --textColor: rgb(19, 18, 18);   
+    --T2Color:rgb(226, 118, 30);
+    --shadowColor: rgb(255, 238, 0);
+}
+/* App.css */
+
+.rocet {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    transition: transform 0.3s ease;
+    animation: rocketMovement 2s infinite; /* Animatsiyani boshlash */
+}
+  
+.R1{
+    background-color: none;
+    transform: rotateZ(-45deg);
+    width: 100px;
+    height: 100px;
+}
+.R2 {
+    background-color: none;
+    transform: rotateZ(-45deg);
+    width: 100px;
+    height: 100px;
+    display: none; /* "Rocet 2" tasvirini avval yopamiz */
+}
+/* Dark mode holatida "Rocet 1" tasviri chiqadi */
+.ALLContent.dark-mode .R1 {
+    display: none;
+}
+
+/* Dark mode holatida "Rocet 2" tasviri chiqadi */
+.ALLContent.dark-mode .R2 {
+    display: block;
+}
+
+.ALLContent {
+    background-color: var(--LightMode);
+    position: relative;
+    transition: background-color 0.3s, color 0.3s;
+}
+.ALLContent.dark-mode {
+    background-color: var(--BodyColor);
+    color: var(--DarkMode);
+}
+  
+.container.dark-mode {
+    background-color: var(--BodyColor);
+}
+.container{
+    width: auto;
+    background-color: var(--LightMode);
+    margin: auto;
+    height: auto;
+}
+.conteiner_registerpage{
+    width: 1200px;
+    margin: auto;
+    height: 635px;
+    background-image: url(./assets/33f54d6856c9a5336a8f86df8743e240.jpg);
+    background-position: absolute;
+    background-size: cover;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+
+@keyframes rocketMovement {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-30px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+}
+
+@media (max-width: 1000px){
+    .container{
+        width: 900px;
+    }
+}
+@media (max-width: 900px){
+    .container{
+        width: 800px;
+    }
+}
+@media (max-width: 800px){
+    .container{
+        width: 700px;
+    }
+}
+@media (max-width: 700px){
+    .container{
+        width: 600px;
+    }
+}
+@media (max-width: 600px){
+    .container{
+        width: 500px;
+    }
+}
+@media (max-width: 400px){
+    .container{
+        width: 300px;
+    }
+}
+@media (max-width: 300px){
+    .container{
+        width: 200px;
+    }
+}
+/* @media (max-width: 500px){
+    .container{
+        width: 100%;
+    }
+} */

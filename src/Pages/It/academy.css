@@ -1,0 +1,168 @@
+:root {
+  --LightMode: white;
+  --DarkMode: rgb(0, 0, 0);
+  --BodyColor: rgb(27, 26, 26);
+  --textColor: rgb(19, 18, 18);
+  --T2Color:rgb(226, 118, 30);
+  --shadowColor: rgb(255, 238, 0);
+  --LightSky:rgb(0, 195, 255);
+  --lightT2color:#ff9100;
+}
+
+.Page_Abought {
+  width: 1100px;
+  margin: auto;
+  height: 1000px;
+  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 500px);
+}
+.Page_Abought .text_abought1 {
+  position: relative;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.Page_Abought .text_abought1 .round-effect2 {
+  animation: effectminus 10s linear infinite;
+  right: 50%;
+  top: 80px;
+  width: 150px;
+  position: absolute;
+}
+.Page_Abought .text_abought1 .site_name1 {
+  font-size: 50px;
+  color: var(--lightT2color);
+}
+.Page_Abought .text_abought1 .site_name2 {
+  font-size: 50px;
+  color: var(--LightSky);
+}
+.Page_Abought .text_abought1 .text1 {
+  font-size: 18px;
+  transition: all 0.8s;
+  cursor: pointer;
+  color: #000000;
+}
+.Page_Abought .text_abought1 .text1.dark-mode {
+  font-size: 18px;
+  cursor: pointer;
+  color: #ffffff;
+}
+.Page_Abought .logo_abought {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(1);
+}
+.Page_Abought .logo_abought .round-effect1 {
+  bottom: 50px;
+  left: 90px;
+  animation: effect 10s linear infinite;
+  position: absolute;
+  width: 130px;
+}
+.Page_Abought .logo_abought .round-effect2 {
+  animation: effectminus 10s linear infinite;
+  right: 50px;
+  top: 10px;
+  width: 200px;
+  position: absolute;
+}
+.Page_Abought .Classes_img {
+  cursor: pointer;
+  height: 400px;
+  position: relative;
+}
+.Page_Abought .Classes_img .room1 {
+  left: 200px;
+  width: 300px;
+  position: absolute;
+  border-radius: 15px;
+}
+.Page_Abought .Classes_img .room2 {
+  width: 400px;
+  top: 50%;
+  border-radius: 15px;
+  position: absolute;
+}
+.Page_Abought .Classes_img .img_effect_bg {
+  top: 15%;
+  left: 20%;
+  position: absolute;
+  transition: all 5s;
+  color: #ff9100;
+  animation: effect 10s linear infinite;
+}
+.Page_Abought .end-text2 {
+  width: 500px;
+  margin: auto;
+  font-size: 25px;
+  color: var(--BodyColor);
+  position: relative;
+}
+.Page_Abought .end-text2 .round-effect2 {
+  animation: effect 10s linear infinite;
+  right: 0;
+  top: 80px;
+  width: 150px;
+  position: absolute;
+}
+.Page_Abought .end-text2 .round-effect1 {
+  animation: effectminus 10s linear infinite;
+  right: 0;
+  border-radius: 360px;
+  bottom: 0;
+  width: 200px;
+  position: absolute;
+}
+.Page_Abought .end-text2.dark-mode {
+  color: var(--LightMode);
+}
+
+@keyframes effect {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes effectminus {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+.ALLContent.light-mode {
+  background-color: white;
+}
+
+.logo.lightmode {
+  display: block;
+}
+
+.logo.darkmode {
+  display: none;
+}
+
+.ALLContent.light-mode .logo.lightmode {
+  display: inline-block;
+  background-color: aqua;
+}
+
+.ALLContent.dark-mode .logo.darkmode {
+  display: inline-block;
+  border-radius: 50px;
+  background-color: #000000;
+}
+
+@media (max-width: 600px) {
+  .Page_Abought {
+    display: grid;
+  }
+}/*# sourceMappingURL=academy.css.map */

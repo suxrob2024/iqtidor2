@@ -1,0 +1,180 @@
+:root {
+  --LightMode: rgb(106, 175, 202);
+  --DarkMode: rgb(48, 46, 46);
+  --BodyColor: rgb(27, 26, 26);
+  --textColor: rgb(19, 18, 18);
+  --T2Color: rgb(226, 118, 30);
+  --shadowColor: rgb(255, 238, 0);
+}
+
+.Smm {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Smm.dark-mode {
+  background-color: var(--BodyColor);
+}
+.sahifa{
+  color: var(--DarkMode);
+}
+#ments{
+  color: var(--DarkMode);
+}
+.sahifa.dark-mode {
+  color: var(--T2Color);
+}
+
+.marketingpage {
+  background-color: white;
+  width: 100%;
+  height: auto;
+  color: var(--textColor);
+}
+
+.marketingpage.dark-mode {
+  background-color: var(--BodyColor);
+  color: var(--T2Color);
+}
+
+#ments.dark-mode {
+  color: var(--T2Color);
+}
+.marketing1{
+  width: 100%;
+  height: 200px;
+}
+.wrapper2{  
+  padding: 50px 350px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 100px);
+}
+.icon{
+  position: relative;
+  margin: 0 20px;
+}
+.Iconroom{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  border-radius: 180px;
+  align-items: center;
+}
+.fab{
+  padding-left: 50px;
+  width: 50px;
+  height: 50px;
+  transition: all 0.5s;
+}
+.tooltip{
+  width: 100%;
+  transform: scale(0.9);
+  position: absolute;
+  top: 0px;
+  opacity: 0;
+  pointer-events: none;
+  color: #fff;
+  padding: 13px 20px ;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  background-color: aliceblue;
+}
+.tooltip::before{
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  background-color: aliceblue;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+}
+.wrapper2 .facebook:hover .Iconroom .fab{
+  color: #fff;
+}
+.icon:hover .tooltip{
+  top: -70px;
+  opacity: 1;
+  pointer-events: auto;
+  transition: all 0.3s cubic-bezier(0.68,-0.55,0.265,1.55);
+
+}
+.fab:hover{
+  transition: 0.3s;
+  transform: scale(1.3);
+}
+.wrapper2 .icon:hover .Iconroom,
+.wrapper2 .icon:hover .tooltip{
+  text-shadow: 0 -1px 0px rgba(o,o,o,0.4);
+}
+.wrapper2 .facebook:hover .Iconroom,
+.wrapper2 .facebook:hover .tooltip,
+.wrapper2 .facebook:hover .tooltip::before{
+  background-color: #1c6ae0;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  font-size: 20px;
+}
+.wrapper2 .twitter:hover .Iconroom,
+.wrapper2 .twitter:hover .tooltip,
+.wrapper2 .twitter:hover .tooltip::before{
+  background:  rgb(0, 204, 255); 
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  font-size: 20px;
+}
+.wrapper2 .instagram:hover .Iconroom,
+.wrapper2 .instagram:hover .tooltip,
+.wrapper2 .instagram:hover .tooltip::before{
+  background:rgb(255, 0, 242);
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  font-size: 20px;
+}
+.wrapper2 .telegram:hover .Iconroom,
+.wrapper2 .telegram:hover .tooltip,
+.wrapper2 .telegram:hover .tooltip::before{
+  background:  rgb(0, 132, 255);
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  font-size: 20px;
+}
+.wrapper2 .discord:hover .Iconroom,
+.wrapper2 .discord:hover .tooltip,
+.wrapper2 .discord:hover .tooltip::before{
+  background:  rgb(68, 0, 255);
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  font-size: 20px;
+}
+.partner{
+  padding-top: 30px;
+  padding-bottom: 100px;
+  background-color: var(--LightMode);
+  width: 100%;
+  margin: auto;
+}
+.hamkorlar{
+   /* box-shadow: 0px 0px 20px;
+    border-radius: 30px; */
+  width: 200px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+.partner.dark-mode{
+  background-color: var(--BodyColor);
+  color: var(--LightMode);
+}
+@media (max-width:700px){
+  .wrapper2{  
+    padding: 50px 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 100px);
+  }
+}

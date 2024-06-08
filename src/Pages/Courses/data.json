@@ -1,0 +1,106 @@
+{
+    "Kurslar": [
+       {
+        "id": 1,
+        "img": "https://iqtidor.uicgroup.tech/media/courses/icons/2024/04/17/Phyton-Page.svg",
+        "abought": "Foundation(Phyton)"
+       },
+       {
+        "id": 2,
+        "img": "https://iqtidor.uicgroup.tech/media/courses/icons/2024/04/19/desktop-computer.png",
+        "abought": "Kompyuter Savodxonligi"
+       },
+       {
+        "id": 3,
+        "img": "https://iqtidor.uicgroup.tech/media/courses/icons/2024/04/17/AdvencedFrontend.svg",
+        "abought": "Frontend"
+       },
+       {
+        "id": 4,
+        "img": "https://iqtidor.uicgroup.tech/media/courses/icons/2024/04/17/3d.png",
+        "abought": "3D Modeling"
+       },
+       {
+        "id": 5,
+        "img": "https://iqtidor.uicgroup.tech/media/courses/icons/2024/04/17/GrafikDizayn_yzC8tbZ.svg",
+        "abought": "Grafik Dizayn"
+       },
+       {
+        "id": 6,
+        "img": "https://iqtidor.uicgroup.tech/media/courses/icons/2024/04/17/IT_ingliz.svg",
+        "abought": "It uchun ingliz tili"
+       },
+       {
+        "id": 7,
+        "img": "https://iqtidor.uicgroup.tech/media/courses/icons/2024/04/17/SMM_kurs.svg",
+        "abought": "SMM kursi"
+       },
+       {
+        "id": 8,
+        "img": "https://iqtidor.uicgroup.tech/media/courses/icons/2024/04/23/Frame.png",
+        "abought": "Robototexnika"
+       },
+       {
+        "id": 9,
+        "img": "https://iqtidor.uicgroup.tech/media/courses/icons/2024/05/01/phone_1_1.png  ",
+        "abought": "Mobile Developers"
+       }
+    ],
+    "schema": [
+        {   
+            "id": 1,
+            "img": "https://iqtidor.uicgroup.tech/media/course/images/2024/04/19/brainstorming_with_team.webp",
+            "kursname": "Foundation (Phyton)",
+            "kursinfo": "Python tili mavjud bo'lgan dasturlash tillari ichida eng ko'p ishlatiladigan tillardan biri hisoblanib, u sintaksisini soddaligi va murakkab emasligi bilan ajralib turadi. Bu esa tilni o'rganishni osonlashtiradi va foydalanuvchilar soni ham ko'pligini taminlaydi."
+        },
+        {   
+            "id": 2,
+            "img": "https://iqtidor.uicgroup.tech/media/course/images/2024/04/19/7_meeting_with_client.webp",
+            "kursname": "Kompyuter Savodxonligi",
+            "kursinfo": "Kursda siz kompyuter bilan tuliq ishlash kunikmasiga va undan tashqari ZOOM, Word, Excel, Point va Access dasturlarida ishlash o'rgatiladi."
+        },
+        {   
+            "id": 3,
+            "img": "https://iqtidor.uicgroup.tech/media/course/images/2024/04/19/16_our_project_get_error.webp",
+            "kursname": "Frontend",
+            "kursinfo": "Front-end veb rivojlantirish, bu veb-sayt foydalanuvchilari yoki mobil ilovalar foydalanuvchilari tomonidan ko‘rib, ishlatiladigan sahifalarning foydalanish funksionallarini bajaradigan qismini foydalanishga taqdim etadigan bo‘limdir. Yuqori darajali kurslarda siz JavaScript yoki React js larda mukammal ishlashni o‘rganasiz."
+        },
+        {   
+            "id": 4,
+            "img": "https://iqtidor.uicgroup.tech/media/course/images/2024/04/19/5_managing_project_on_pc_l2dEhEu.webp",
+            "kursname": "3D Modelling",
+            "kursinfo": "3D modellashtirish eng daromadli sohalardan biri hisoblanadi, o'rtacha ish haqi 500 dollardan boshlanadi. Bu soha endi zamonaviy kasb!!!"
+        },
+        {   
+            "id": 5,
+            "img": "https://iqtidor.uicgroup.tech/media/course/images/2024/04/19/2_working_Together.webp",
+            "kursname": "Grafik Dizayn",
+            "kursinfo": "Grafik dizayn - bu tipografiya, fotografiya, ikonografiya va illyustratsiya yordamida vizual aloqa va muammolarni birlashtirish jarayonidir. Ushbu sohada tinglovchilar turli xil dasturlar yordamida o‘z malakalarini oshirib borishadi. Grafik dizayn turli xil yo‘nalish va bo‘limlarga bo‘linadi. Grafik dizaynerlar turli xil g'oyalar va xabarlarning vizual ko'rinishini hosil qiladilar."
+        },
+        {   
+            "id": 6,
+            "img": "https://iqtidor.uicgroup.tech/media/course/images/2024/04/19/2_working_Together_1.webp",
+            "kursname": "IT uchun ingliz tili.",
+            "kursinfo": "Bugungi kunda, O'zbekistonda ko'plab dasturchilar xalqaro kompaniyalarda yoki frilanser bo'lib ishlashi uchun chet tilini yaxshi bilmasligi natijasida qiynalmoqdalar, shuning uchun sizni mamnuniyat bilan ingliz tilingizni yuqori bosqichga ko'tarishga taklif qilamiz! 'IQ' bilan IT sohasida yangi marralarni zabt eting!"
+        },
+        {   
+            "id": 7,
+            "img": "https://iqtidor.uicgroup.tech/media/course/images/2024/04/19/2_working_Together_1.webp",
+            "kursname": "SMM kursi",
+            "kursinfo": "Social Media Marketing (SMM) - kompaniyaning mahsulot va xizmatlarini sotish uchun ijtimoiy media saytlari va ijtimoiy tarmoqlardan foydalanishning strategik yo‘li hisoblanadi. Ijtimoiy media marketing tarmoqlari orqali yangi mijozlarga erishish, kompaniyaning obro‘sini oshirish hamda mavjud mijozlar bilan ishlash, va ular istagan madaniyat, maqsad yoki yo‘nalishni targ‘ib qilish bilan shug‘ullanadi."
+        },
+        {   
+            "id": 8,
+            "img": "https://iqtidor.uicgroup.tech/media/course/images/2024/04/19/brainstorming_with_team_a4d03zP.webp",
+            "kursname": "Robototexnika",
+            "kursinfo": "«Robotexnika» kursi 8 yoshdan 16 yoshgacha bo'lgan bolalar uchun mo'ljallangan. Kurs doirasida siz robototexnika asoslarini o'rganishingiz mumkin: (robotlar tushunchasi, atamalari va tamoyillari); robot dasturlash asoslari (robotlarni boshqarish uchun dasturlash tillari, algoritmlar va ma’lumotlar tuzilmalarini o‘rganish), mexanik modellashtirish asoslari: (robotlarning mexanik qismlarini, ularning konstruksiyasi va ishlash tamoyillarini o‘rganish), elektronika va elektr sxemalari asoslari: (komponentlarni o‘rganish va robotning ishlashi uchun zarur bo'lgan sxemalar ), sensorlar: (har xil turdagi sensorlar va ularni robototexnikada qo'llashni o'rganish), robotlar mexatronikasi: (robotlarni yaratishda foydalaniladigan mexanizmlar va ularni boshqarishni o‘rganish), robotlarning harakatini boshqarish: (robotlar harakatini boshqarish algoritmlari va usullarini o‘rganish), robotlarni loyihalash va yaratish: (robotlarni yaratish va rivojlantirish)."
+        },
+        {   
+            "id": 9,
+            "img": "https://iqtidor.uicgroup.tech/media/course/images/2024/05/01/removal.ai_a7004fd1-6fda-49c2-9dff-9fc67edeff32-black-white-mi_0BZ9Erx.webp",
+            "kursname": "Mobile Developer",
+            "kursinfo": "Tez kunda kurs Moduli ochiladi ..."
+        }
+
+    ]
+}
