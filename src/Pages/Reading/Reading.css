@@ -8,7 +8,12 @@
   --LightSky: rgb(0, 195, 255);
   --lightT2color: #ff9100;
 }
-
+.kurslar2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .Sectr {
   width: 100%;
   display: flex;
@@ -26,7 +31,7 @@
 }
 .ky.dark-mode{
   color: var(--LightSky);
-  text-shadow: 0 0 20px;
+  text-shadow: 0 0 15px;
 }
 .intigration_bar {
   display: flex;

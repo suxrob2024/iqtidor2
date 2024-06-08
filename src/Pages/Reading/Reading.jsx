@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import PhoneInput from 'react-phone-number-input';
 import 'react-phone-number-input/style.css';
+import Data from './data.json'
 import './Reading.css';
 
 function Reading({ darkMode }) {
@@ -10,10 +11,7 @@ function Reading({ darkMode }) {
   const [userName, setUserName] = useState('');
 
   useEffect(() => {
-    fetch('http://localhost:3000/Kurslar')
-      .then(response => response.json())
-      .then(data => setCourses(data))
-      .catch(error => console.error('Error fetching courses:', error));
+    setCourses(Data.Kurslar);
   }, []);
 
   const handleCheckboxChange = (id) => {
@@ -25,7 +23,6 @@ function Reading({ darkMode }) {
       alert('Iltimos ketmaketlikni bajaring');
     } else {
       alert('Malumot yuborildi');
-      // Clear the inputs and reset the state
       setSelectedCourseId(null);
       setUserName('');
       setValue('');
@@ -34,9 +31,7 @@ function Reading({ darkMode }) {
 
   return (
     <div className={`Sectr ${darkMode ? 'dark-mode' : ''}`}>
-      <div className="R1">
-        <h1 className={`ky ${darkMode ? 'dark-mode' : ''}`}>Kurslarimizga yoziling!</h1>
-      </div>
+      <h1 className={`ky ${darkMode ? 'dark-mode' : ''}`}>Kurslarimizga yoziling!</h1>
       <div className="intigration_bar">
         <div className="kurslar_check">
           {courses.map(course => (

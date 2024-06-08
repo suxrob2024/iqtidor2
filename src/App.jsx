@@ -13,6 +13,7 @@ import Reading from './Pages/Reading/Reading';
 import Abought from './Pages/It/Academy';
 
 function App() {
+  const [showSlider, setShowSlider] = useState(true);
   const [showReading, setShowReading] = useState(false);
   const [showSign, setShowSign] = useState(false);
   const [showAbought, setShowAbought] = useState(false);
@@ -27,9 +28,9 @@ function App() {
   const handleScroll = () => {
     setScrollPosition(window.scrollY); 
     if (window.scrollY > 300) {
-      setRocketVisible(true); // scrol bulganda roketani kursatish
+      setRocketVisible(true); // Show rocket on scroll
     } else {
-      setRocketVisible(false); // roketani yahsirish
+      setRocketVisible(false); // Hide rocket
     }
   };
 
@@ -44,33 +45,48 @@ function App() {
     };
   }, []);
 
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowSlider(false);
+    }, 3000); // soniya
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <div className={`ALLContent ${darkMode ? 'dark-mode' : ''}`}>
-      {rocketVisible && ( //
-        <div className='rocet' style={{ transform: `translateY(${scrollPosition > 300 ? '0' : '-100%'})` }} onClick={scrollToTop}>
-          <img className='R1' src={Rocetlight} alt="Rocket" />
-          <img className='R2' src={Rocetdark} alt="" />
-        </div>
+      {showSlider && (
+        <div className="loader"><h1 className=' iq2'>Iqtidor</h1></div>
       )}
-      <Navbar
-        setShowReading={setShowReading}
-        setShowSign={setShowSign}
-        setShowAbought={setShowAbought}
-        toggleDarkMode={toggleDarkMode}
-        darkMode={darkMode}
-      />
-      {!showReading && !showSign && !showAbought && (
-        <div className='container'>
-          <Sectr1 darkMode={darkMode} />
-          <Courses darkMode={darkMode} />
-          <Mentors darkMode={darkMode} />
-          <Tarmoqlar darkMode={darkMode} />
-        </div>
+      {!showSlider && (
+        <>
+          {rocketVisible && (
+            <div className='rocet' style={{ transform: `translateY(${scrollPosition > 300 ? '0' : '-100%'})` }} onClick={scrollToTop}>
+              <img className='R1' src={Rocetlight} alt="Rocket" />
+              <img className='R2' src={Rocetdark} alt="" />
+            </div>
+          )}
+          <Navbar
+            setShowReading={setShowReading}
+            setShowSign={setShowSign}
+            setShowAbought={setShowAbought}
+            toggleDarkMode={toggleDarkMode}
+            darkMode={darkMode}
+          />
+          {!showReading && !showSign && !showAbought && (
+            <div className='container'>
+              <Sectr1 darkMode={darkMode} />
+              <Courses darkMode={darkMode} />
+              <Mentors darkMode={darkMode} />
+              <Tarmoqlar darkMode={darkMode} />
+            </div>
+          )}
+          {showReading && <Reading darkMode={darkMode} />}
+          {showSign && <Sign />}
+          {showAbought && <Abought darkMode={darkMode} />}
+          <Footer darkMode={darkMode} />
+        </>
       )}
-      {showReading && <Reading />}
-      {showSign && <Sign />}
-      {showAbought && <Abought darkMode={darkMode} />}
-      <Footer darkMode={darkMode} />
     </div>
   );
 }
