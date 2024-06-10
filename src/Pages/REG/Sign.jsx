@@ -41,7 +41,7 @@ function Sign({ setShowSign }) {
     if (verificationCode === randomCode) {
       const userData = {
         name: name,
-        account: account,
+        password: account,
         code: randomCode
       };
       localStorage.setItem('userData', JSON.stringify(userData));
