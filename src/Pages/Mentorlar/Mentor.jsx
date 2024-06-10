@@ -15,7 +15,7 @@ function Mentor(darkMode) {
     infinite: true,
     speed: 700,
     slidesToShow: 5,
-    slidesToScroll: 3,
+    slidesToScroll: 5,
     autoplay: true,
     autoplaySpeed: 3000,
     arrows: false
@@ -71,6 +71,17 @@ function Mentor(darkMode) {
             </div>
             ))}
         </Slider>
+      </div>
+      <div className="Card-mentors">
+        {Uqtuvchilar.Mentors.map((mentor) => (
+          <div className='Card' key={mentor.id}>
+            <img className='mentor_img1' src={mentor.img} alt="mentor" />
+            <div className="info-mentor">
+              <h1 className='mmm'>{mentor['mentor-name']}</h1>
+              <h1 className='mmm'> {mentor['mentor-job']}</h1>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );

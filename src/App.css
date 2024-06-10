@@ -54,7 +54,7 @@
     background-color: var(--BodyColor);
 }
 .container{
-    width: auto;
+    width: 1200px;
     background-color: var(--LightMode);
     margin: auto;
     height: auto;
@@ -122,6 +122,16 @@
       transform: translateY(0px);
     }
 }
+@media (max-width: 1400px){
+    .container{
+        width: 1200px;
+    }
+}
+@media (max-width: 1200px){
+    .container{
+        width: 1000px;
+    }
+}
 
 @media (max-width: 1000px){
     .container{
@@ -149,6 +159,11 @@
 @media (max-width: 600px){
     .container{
         width: 500px;
+    }
+}
+@media (max-width: 500px){
+    .container{
+        width: 400px;
     }
 }
 @media (max-width: 400px){

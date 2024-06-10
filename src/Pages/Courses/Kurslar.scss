@@ -99,10 +99,10 @@
         .Kurslar_abought{
             width: 100%;
             .all{
-                width: 1200px;
-                padding: 10px 20px;
+                width: 100%;
                 display: grid;
                 grid-template-columns: repeat(auto-fit, 500px);
+                justify-content: center;
                 .kurs_img{
                     .kurs_icon{
                         width: 400px;
@@ -112,10 +112,11 @@
                 .kurs_abought{
                     display: flex;
                     flex-direction: column;
-                    padding-left: 100px;
+                    justify-content: center;
+                    align-items: center;
                     gap: 20px;
-                    align-items: start;
                     .kurs_info{
+                        width: 300px;
                         padding-top: 20px;
                         font-size: 20px;
                         color: var(--DarkMode);
@@ -174,9 +175,45 @@
     background-color: var(--BodyColor);
     color: var(--LightMode);
 }
-
+@media (max-width: 900px){
+    .Kurslar{
+        .Abought_Courses{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, 300px);
+            .Kurslar_abought{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .all{
+                    width: 100%;
+                    display: grid;
+                    grid-template-columns: repeat(1, 300px);
+                    .kurs_img{
+                        .kurs_icon{
+                            width: 250px;
+                            height: 250px;
+                        }
+                    }
+                    .kurs_abought{
+                        .kurs_info{
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 @media (max-width: 425px){
     .menu_kurslar{
         justify-content: center;
+    }
+}
+@media (max-width: 725px){
+    .Kurslar{
+        .KKK{
+            display: flex;
+            flex-direction: column;
+        }
     }
 }

@@ -5,7 +5,6 @@ import 'aos/dist/aos.css';
 import kurslarData from './data.json'; // JSON ma'lumotlarni import qilamiz
 
 function Kurslar({ darkMode }) {
-    const [expandedCourses, setExpandedCourses] = useState({});
     const [showMenu, setShowMenu] = useState(true);
     const [selectedCourse, setSelectedCourse] = useState(null);
 
@@ -15,7 +14,7 @@ function Kurslar({ darkMode }) {
     };
 
     const hideMenu = () => {
-        setShowMenu(true); // Show the menu
+        setShowMenu(true); // menyuni kursatish
         setSelectedCourse(null); // Clear selected course
     };
 

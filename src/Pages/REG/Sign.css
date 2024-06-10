@@ -1,236 +1,122 @@
-.wrapper {
-  margin: auto;
-  overflow: hidden;
+.Register {
+  width: 100%;
+  height: 600px;
+  background-image: url(./33f54d6856c9a5336a8f86df8743e240.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Register .R-text {
+  color: rgba(0, 0, 255, 0.596);
+  border-radius: 0.5px solid black;
+  font-size: 50px;
+  font-weight: 900;
+}
+.Register .Reg-Log {
+  display: flex;
+}
+.Register .Reg-Log button {
+  width: 160px;
+  height: 70px;
+  background-color: rgba(0, 132, 255, 0.61);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s;
+  position: relative;
+  font-size: 20px;
+}
+.Register .Reg-Log button ion-icon {
+  padding-left: 50px;
+  opacity: 0;
+  color: black;
   position: absolute;
-  bottom: 50px;
-  width: 400px;
-  left: 400px;
-  height: 440px;
+}
+.Register .Reg-Log button:hover ion-icon {
+  transition-duration: 0.5s;
+  opacity: 1;
+  right: 20px;
+}
+.Register .Reg-Log button:hover {
+  transition: all 0.5s;
+  transform: scaleX(220px);
+}
+.Register .SignIn, .Register .Login {
   background: transparent;
-  border: 2px solid rgba(204, 178, 178, 0.5);
+  border: 2px solid rgba(174, 214, 221, 0.5);
   border-radius: 20px;
   -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
-  display: block;
-  justify-content: center;
-  align-items: center;
-  transition: height 0.2s ease;
-  z-index: 2;
-}
-.wrapper .iclosed {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 45px;
-  height: 45px;
-  background-color: #134411;
-  color: rgb(255, 0, 0);
+  width: 400px;
+  height: 450px;
+  border-radius: 20px;
+  gap: 20px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: 2em;
   align-items: center;
-  border-radius: 0px 6px 0px 20px;
-  cursor: pointer;
-  z-index: 1;
+}
+.Register .SignIn .next_s, .Register .Login .next_s {
+  font-size: 18px;
+  text-align: center;
+  color: black;
+}
+.Register .SignIn .next_s a, .Register .Login .next_s a {
+  text-decoration: underline;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 23px;
+}
+.Register .SignIn .chekker, .Register .Login .chekker {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.Register .SignIn .chekker .cheked, .Register .Login .chekker .cheked {
+  color: chartreuse;
+  background-color: chocolate;
+}
+.Register .SignIn .chekker .s_chek, .Register .Login .chekker .s_chek {
+  color: black;
+  font-size: 15px;
+}
+.Register .SignIn .s_text, .Register .Login .s_text {
+  color: rgb(0, 68, 255);
+}
+.Register .SignIn .inputtt, .Register .Login .inputtt {
+  padding: 20px 20px;
+  border-radius: 10px;
   border: 0;
+  background-color: rgba(185, 169, 147, 0.205);
+  color: rgb(0, 0, 0);
+  font-weight: 800;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
-.wrapper .form-box.login {
-  width: 100%;
-  padding: 40px;
-}
-.wrapper .form-box.login h2 {
-  font-size: 2em;
-  color: rgb(13, 44, 80);
-  text-align: center;
-}
-.wrapper .form-box.login .input-box {
-  position: relative;
-  width: 100%;
-  height: 50px;
-  border-bottom: 2px solid #162938;
-  margin: 30px 0px;
-}
-.wrapper .form-box.login .input-box label {
-  position: absolute;
-  top: 50%;
-  left: 5px;
-  color: #162938;
-  transform: translateY(-50%);
-  font-size: 1em;
-  font-weight: 500;
-  pointer-events: none;
-  transition: 0.5s;
-}
-.wrapper .form-box.login .input-box input:focus ~ label,
-.wrapper .form-box.login .input-box input:valid ~ label {
-  top: -5px;
-}
-.wrapper .form-box.login .input-box input {
-  width: 100%;
-  height: 100%;
-  background: transparent;
-  border: none;
-  font-size: 1em;
-  font-weight: 600;
-  color: #162938;
-  outline: none;
-  padding: 0 35px 0 5px;
-}
-.wrapper .form-box.login .input-box .icon {
-  position: absolute;
-  right: 8px;
-  color: #162938;
-  line-height: 57px;
-  font-size: 1.2em;
-}
-.wrapper .form-box.login .remember-forgot {
-  font-size: 0.9em;
-  color: #162938;
-  font-weight: 500;
-  margin: -15px 0 15px;
+.Register .SignIn .werffy, .Register .Login .werffy {
   display: flex;
-  justify-content: space-between;
+  gap: 10px;
 }
-.wrapper .form-box.login .remember-forgot label input {
-  accent-color: #134411;
-  margin-right: 3px;
-}
-.wrapper .form-box.login .btn1 {
-  width: 100%;
-  height: 45px;
-  background-color: rgb(15, 63, 47);
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 2em;
-  font-weight: 600;
-}
-.wrapper .form-box.login .login-register {
-  font-size: 0.9em;
-  color: #134411;
-  text-decoration: none;
-  text-align: center;
-  font-weight: 500;
-  margin: 25px 0px 10px;
-}
-.wrapper .form-box.login .login-register p a {
-  color: #133168;
-  text-decoration: none;
-  font-weight: 600;
-}
-.wrapper .form-box.login .login-register p a:hover {
-  text-decoration: underline;
-}
-.wrapper .form-box.register {
-  position: absolute;
-  transform: translateX(400px);
-}
-.wrapper .form-box.register h2 {
-  font-size: 2em;
-  color: rgb(13, 44, 80);
-  text-align: center;
-}
-.wrapper .form-box.register .input-box {
-  position: relative;
-  width: 100%;
-  height: 50px;
-  border-bottom: 2px solid #162938;
-  margin: 30px 0px;
-}
-.wrapper .form-box.register .input-box label {
-  position: absolute;
-  top: 50%;
-  left: 5px;
-  color: #162938;
-  transform: translateY(-50%);
-  font-size: 1em;
-  font-weight: 500;
-  pointer-events: none;
-  transition: 0.5s;
-}
-.wrapper .form-box.register .input-box input:focus ~ label,
-.wrapper .form-box.register .input-box input:valid ~ label {
-  top: -5px;
-}
-.wrapper .form-box.register .input-box input {
-  width: 100%;
-  height: 100%;
-  background: transparent;
-  border: none;
-  font-size: 1em;
-  font-weight: 600;
-  color: #162938;
-  outline: none;
-  padding: 0 35px 0 5px;
-}
-.wrapper .form-box.register .input-box .icon {
-  position: absolute;
-  right: 8px;
-  color: #162938;
-  line-height: 57px;
-  font-size: 1.2em;
-}
-.wrapper .form-box.register .remember-forgot {
-  font-size: 0.9em;
-  color: #162938;
-  font-weight: 500;
-  margin: -15px 0 15px;
-  display: flex;
-  justify-content: space-between;
-}
-.wrapper .form-box.register .remember-forgot label input {
-  accent-color: #134411;
-  margin-right: 3px;
-}
-.wrapper .form-box.register .btn1 {
-  width: 100%;
-  height: 45px;
-  background-color: rgb(15, 63, 47);
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 2em;
-  font-weight: 600;
-}
-.wrapper .form-box.register .login-register {
-  font-size: 0.9em;
-  color: #134411;
-  text-decoration: none;
-  text-align: center;
-  font-weight: 500;
-  margin: 25px 0px 10px;
-}
-.wrapper .form-box.register .login-register p a {
-  color: #133168;
-  text-decoration: none;
-  font-weight: 600;
-}
-.wrapper .form-box.register .login-register p a:hover {
-  text-decoration: underline;
+.Register .SignIn .werffy .werify, .Register .Login .werffy .werify {
+  width: 50px;
+  background-color: rgb(233, 211, 11);
 }
 
-.wrapper.active {
-  height: 480px;
-}
-
-.wrapper .form-box.login {
-  transition: transform 0.18s ease;
-  transform: translateX(0);
-}
-
-.wrapper.active .form-box.login {
-  transition: none;
-  transform: translateX(-400px);
-}
-
-.wrapper .form-box.register {
-  position: absolute;
-  transition: none;
-  transform: translateX(400px);
-}
-
-.wrapper.active .form-box.register {
-  transition: transform 0.18s ease;
-  transform: translateX(0);
+@media (max-width: 500px) {
+  .Register .Reg-Log {
+    display: flex;
+    flex-direction: column;
+  }
+  .Register .SignIn, .Register .Login {
+    height: 650px;
+    width: 300px;
+  }
+  .Register .SignIn .werffy, .Register .Login .werffy {
+    display: flex;
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=Sign.css.map */

@@ -49,7 +49,7 @@ function Section1({ darkMode }) {
           <button className='s1btn'  data-aos="fade-up" data-aos-anchor-placement="top-center" >Ariza qoldirish</button>
           <button className='s1btn 2'>sertifikat holatini tekshirish</button>
         </div>
-        <div className="sectr_paragraps" data-aos="fade-up-left" >
+        <div className="sectr_paragraps" >
           <p className='textp'>Bugungi <span className='us_text '>kun o’rganuvchilari</span></p>
           <p className='textp'>Ertangi<span className='us_text'>Kun egalari</span></p>
           <p className='textp'>Iqtidor <span className='plus_text'>bilan</span><span className='us_text'>kelajakka qadam bos</span></p>

@@ -76,10 +76,40 @@
   color: var(--LightMode);
 }
 
+@media (max-width: 1000px) {
+  .footerpage #kurslar {
+    font-size: 30px;
+    color: var(--LightSky);
+    text-shadow: 0 0 20px;
+  }
+  .footerpage .footer .end {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    justify-content: start;
+  }
+  .footerpage .footer .end .a2 {
+    display: flex;
+  }
+  .footerpage .footer .end .a1 {
+    display: none;
+  }
+  .footerpage .footer .end .a3 {
+    display: flex;
+  }
+}
 @media (max-width: 500px) {
   .footerpage #kurslar {
     font-size: 30px;
     color: var(--LightSky);
     text-shadow: 0 0 20px;
+  }
+  .footerpage .footer .end .a2 {
+    display: none;
+  }
+  .footerpage .footer .end .a1 {
+    display: none;
+  }
+  .footerpage .footer .end .a3 {
+    display: flex;
   }
 }/*# sourceMappingURL=Footer.css.map */

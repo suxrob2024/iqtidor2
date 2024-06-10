@@ -79,6 +79,33 @@
     background-color: var(--BodyColor);
     color: var(--LightMode);
 }
+@media (max-width: 1000px){
+    .footerpage{
+        #kurslar{
+            font-size: 30px;
+            color: var(--LightSky);
+            text-shadow: 0 0 20px;
+        }
+
+        .footer{
+            .end{
+                display: grid;
+                grid-template-columns: repeat(auto-fit, 300px);
+                justify-content: start;
+                .a2{
+                    display: flex;
+                }
+                .a1{
+                    display: none;
+                }
+                .a3{
+                    display: flex;
+                }
+            }
+        }
+
+    }
+}
 
 @media (max-width: 500px){
     .footerpage{
@@ -87,5 +114,20 @@
             color: var(--LightSky);
             text-shadow: 0 0 20px;
         }
+
+        .footer{
+            .end{
+                .a2{
+                    display: none;
+                }
+                .a1{
+                    display: none;
+                }
+                .a3{
+                    display: flex;
+                }
+            }
+        }
+
     }
 }

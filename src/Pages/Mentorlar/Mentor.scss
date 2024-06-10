@@ -10,7 +10,7 @@
 }
 
 .Mentors {
-  position: relative;
+    position: relative;
     align-items: center;
     width: 100%;
     background-image: url(./bgimg/XL.webp);
@@ -32,6 +32,7 @@
         padding: 10px 30px;
       }
       .Abouht_mentors {
+        display: block;
         padding-top: 20px;
         width: 100%;
         height: auto;
@@ -67,6 +68,7 @@
         }
       }
       .unslider{
+        display: block;
         width: 100%;
         margin-top: 10px;
         opacity: 90%;
@@ -90,10 +92,57 @@
           }
         }
       }
+      .Card-mentors{
+        padding: 30px 0;
+        width: 100%;
+        display: none;
+        grid-template-columns: repeat(1, 400px);
+        grid-gap: 18px;
+        justify-content: space-around;
+        align-items: center;
+        .Card{
+          padding: 10px;
+          -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+          box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+          background: transparent;
+          border-radius: 30px;
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          .mentor_img1{
+            width: 50px; /* Reduced width */
+            height: 50px;
+            border-radius: 360px;
+          }
+          .info-mentor{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            .mmm{
+              font-size: 25px;
+            }
+          }
+        }
+      }
 }
 .Mentors.dark-mode{
   background-color: var(--BodyColor);
   color: var(--LightMode);
+}
+@media (max-width: 700px){
+  .Mentors{
+    .Abouht_mentors{
+      display: none;
+    }
+    .unslider{
+      display: none;
+    }
+    .Card-mentors{
+      display: grid;
+    }
+  }
 }
 @media (max-width: 500px){
   .Mentors{
@@ -102,6 +151,24 @@
       font-size: 30px;
       color: var(--LightSky);
       text-shadow: 0 0 20px;
+    }
+  }
+}
+@media (max-width: 400px){
+  .Mentors{
+    width: 100%;
+    .Card-mentors{
+      display: grid;
+      grid-template-columns: repeat(1, 250px);
+      .Card{
+        width: 250px;
+        .info-mentor{
+          
+          .mmm{
+            font-size: 15px;
+          }
+        }
+      }
     }
   }
 }

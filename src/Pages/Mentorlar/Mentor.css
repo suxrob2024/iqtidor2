@@ -32,6 +32,7 @@
   padding: 10px 30px;
 }
 .Mentors .Abouht_mentors {
+  display: block;
   padding-top: 20px;
   width: 100%;
   height: auto;
@@ -65,6 +66,7 @@
   height: 300px;
 }
 .Mentors .unslider {
+  display: block;
   width: 100%;
   margin-top: 10px;
   opacity: 90%;
@@ -88,12 +90,57 @@
   height: 150px;
   border-radius: 360px;
 }
+.Mentors .Card-mentors {
+  padding: 30px 0;
+  width: 100%;
+  display: none;
+  grid-template-columns: repeat(1, 400px);
+  grid-gap: 18px;
+  justify-content: space-around;
+  align-items: center;
+}
+.Mentors .Card-mentors .Card {
+  padding: 10px;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  background: transparent;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.Mentors .Card-mentors .Card .mentor_img1 {
+  width: 50px; /* Reduced width */
+  height: 50px;
+  border-radius: 360px;
+}
+.Mentors .Card-mentors .Card .info-mentor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.Mentors .Card-mentors .Card .info-mentor .mmm {
+  font-size: 25px;
+}
 
 .Mentors.dark-mode {
   background-color: var(--BodyColor);
   color: var(--LightMode);
 }
 
+@media (max-width: 700px) {
+  .Mentors .Abouht_mentors {
+    display: none;
+  }
+  .Mentors .unslider {
+    display: none;
+  }
+  .Mentors .Card-mentors {
+    display: grid;
+  }
+}
 @media (max-width: 500px) {
   .Mentors {
     width: 100%;
@@ -102,5 +149,20 @@
     font-size: 30px;
     color: var(--LightSky);
     text-shadow: 0 0 20px;
+  }
+}
+@media (max-width: 400px) {
+  .Mentors {
+    width: 100%;
+  }
+  .Mentors .Card-mentors {
+    display: grid;
+    grid-template-columns: repeat(1, 250px);
+  }
+  .Mentors .Card-mentors .Card {
+    width: 250px;
+  }
+  .Mentors .Card-mentors .Card .info-mentor .mmm {
+    font-size: 15px;
   }
 }/*# sourceMappingURL=Mentor.css.map */

@@ -105,10 +105,10 @@
   width: 100%;
 }
 .Kurslar .Abought_Courses .Kurslar_abought .all {
-  width: 1200px;
-  padding: 10px 20px;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, 500px);
+  justify-content: center;
 }
 .Kurslar .Abought_Courses .Kurslar_abought .all .kurs_img .kurs_icon {
   width: 400px;
@@ -117,11 +117,12 @@
 .Kurslar .Abought_Courses .Kurslar_abought .all .kurs_abought {
   display: flex;
   flex-direction: column;
-  padding-left: 100px;
+  justify-content: center;
+  align-items: center;
   gap: 20px;
-  align-items: start;
 }
 .Kurslar .Abought_Courses .Kurslar_abought .all .kurs_abought .kurs_info {
+  width: 300px;
   padding-top: 20px;
   font-size: 20px;
   color: var(--DarkMode);
@@ -189,8 +190,37 @@
   color: var(--LightMode);
 }
 
+@media (max-width: 900px) {
+  .Kurslar .Abought_Courses {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+  }
+  .Kurslar .Abought_Courses .Kurslar_abought {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .Kurslar .Abought_Courses .Kurslar_abought .all {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 300px);
+  }
+  .Kurslar .Abought_Courses .Kurslar_abought .all .kurs_img .kurs_icon {
+    width: 250px;
+    height: 250px;
+  }
+  .Kurslar .Abought_Courses .Kurslar_abought .all .kurs_abought .kurs_info {
+    font-size: 15px;
+  }
+}
 @media (max-width: 425px) {
   .menu_kurslar {
     justify-content: center;
+  }
+}
+@media (max-width: 725px) {
+  .Kurslar .KKK {
+    display: flex;
+    flex-direction: column;
   }
 }/*# sourceMappingURL=Kurslar.css.map */

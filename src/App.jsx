@@ -15,10 +15,10 @@ import Abought from './Pages/It/Academy';
 function App() {
   const [showSlider, setShowSlider] = useState(true);
   const [showReading, setShowReading] = useState(false);
-  const [showSign, setShowSign] = useState(false);
+  const [showSign, setShowSign] = useState(true);
   const [showAbought, setShowAbought] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
-  const [scrollPosition, setScrollPosition] = useState(0); // Track scroll position
+  const [scrollPosition, setScrollPosition] = useState(0);
   const [rocketVisible, setRocketVisible] = useState(false);
 
   const toggleDarkMode = () => {
@@ -26,12 +26,9 @@ function App() {
   };
 
   const handleScroll = () => {
-    setScrollPosition(window.scrollY); 
-    if (window.scrollY > 300) {
-      setRocketVisible(true); // Show rocket on scroll
-    } else {
-      setRocketVisible(false); // Hide rocket
-    }
+    const currentScrollY = window.scrollY;
+    setScrollPosition(currentScrollY);
+    setRocketVisible(currentScrollY > 300);
   };
 
   const scrollToTop = () => {
@@ -48,43 +45,55 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowSlider(false);
-    }, 3000); // soniya
+    }, 3000);
 
     return () => clearTimeout(timer);
   }, []);
 
   return (
     <div className={`ALLContent ${darkMode ? 'dark-mode' : ''}`}>
-      {showSlider && (
-        <div className="loader"><h1 className=' iq2'>Iqtidor</h1></div>
-      )}
-      {!showSlider && (
+      {showSlider ? (
+        <div className="loader">
+          <h1 className="iq2">Iqtidor</h1>
+        </div>
+      ) : (
         <>
           {rocketVisible && (
-            <div className='rocet' style={{ transform: `translateY(${scrollPosition > 300 ? '0' : '-100%'})` }} onClick={scrollToTop}>
-              <img className='R1' src={Rocetlight} alt="Rocket" />
-              <img className='R2' src={Rocetdark} alt="" />
+            <div
+              className="rocket"
+              style={{ transform: `translateY(${rocketVisible ? '0' : '-100%'})` }}
+              onClick={scrollToTop}
+            >
+              <img className="R1" src={Rocetlight} alt="Rocket" />
+              <img className="R2" src={Rocetdark} alt="Rocket" />
             </div>
           )}
-          <Navbar
-            setShowReading={setShowReading}
-            setShowSign={setShowSign}
-            setShowAbought={setShowAbought}
-            toggleDarkMode={toggleDarkMode}
-            darkMode={darkMode}
-          />
-          {!showReading && !showSign && !showAbought && (
-            <div className='container'>
-              <Sectr1 darkMode={darkMode} />
-              <Courses darkMode={darkMode} />
-              <Mentors darkMode={darkMode} />
-              <Tarmoqlar darkMode={darkMode} />
-            </div>
+          {showSign ? (
+            <Sign setShowSign={setShowSign} />
+          ) : (
+            <>
+              <Navbar
+                setShowReading={setShowReading}
+                setShowSign={setShowSign}
+                setShowAbought={setShowAbought}
+                toggleDarkMode={toggleDarkMode}
+                darkMode={darkMode}
+              />
+              <div className="container">
+                {!showReading && !showAbought && (
+                  <>
+                    <Sectr1 darkMode={darkMode} />
+                    <Courses darkMode={darkMode} />
+                    <Mentors darkMode={darkMode} />
+                    <Tarmoqlar darkMode={darkMode} />
+                  </>
+                )}
+                {showReading && <Reading darkMode={darkMode} />}
+                {showAbought && <Abought darkMode={darkMode} />}
+              </div>
+              <Footer darkMode={darkMode} />
+            </>
           )}
-          {showReading && <Reading darkMode={darkMode} />}
-          {showSign && <Sign />}
-          {showAbought && <Abought darkMode={darkMode} />}
-          <Footer darkMode={darkMode} />
         </>
       )}
     </div>

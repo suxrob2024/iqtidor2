@@ -16,7 +16,9 @@
     color: #71dee6;
 }
 .header1{
-    gap: 50px 90px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
     display: grid;
     grid-template-columns: repeat(auto-fit, 450px);
     padding-top: 30px;
@@ -127,32 +129,17 @@ animation-iteration-count: infinite;
     font-size: 20px;
     opacity: 60%;
 }
-@media (max-width: 500px){
-    .header1{
-        display: grid;
-        padding: 10px;
-        grid-template-columns: repeat(1, 300px);
-    }
-    .page1imgs{
-        width: 300px;
-    }
-    .tekshirish{
-        width: 3    00px;
-    }
-}
-@media (max-width: 800px){
-    .s1{
-        width: 100%;
-    }
+
+@media(max-width: 500px){
     .header1{
         width: 100%;
         display: grid;
-        grid-template-columns: repeat(1, 300px);
-    }
-    .page1imgs{
-        width: 200px;
+        grid-template-columns: repeat(auto-fit, 200px);
     }
     .tekshirish{
-        width: 300px;
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
     }
 }
