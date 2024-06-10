@@ -50,6 +50,20 @@ function App() {
     return () => clearTimeout(timer);
   }, []);
 
+  const handleAboutClick = () => {
+    setShowReading(false);
+    setShowAbought(true);
+  };
+
+  const handleCoursesClick = () => {
+    setShowReading(false);
+    setShowAbought(false);
+    window.scrollTo({
+      top: document.getElementById('courses-section').offsetTop,
+      behavior: 'smooth',
+    });
+  };
+
   return (
     <div className={`ALLContent ${darkMode ? 'dark-mode' : ''}`}>
       {showSlider ? (
@@ -83,7 +97,9 @@ function App() {
                 {!showReading && !showAbought && (
                   <>
                     <Sectr1 darkMode={darkMode} />
-                    <Courses darkMode={darkMode} />
+                    <div id="courses-section">
+                      <Courses darkMode={darkMode} />
+                    </div>
                     <Mentors darkMode={darkMode} />
                     <Tarmoqlar darkMode={darkMode} />
                   </>
@@ -91,7 +107,7 @@ function App() {
                 {showReading && <Reading darkMode={darkMode} />}
                 {showAbought && <Abought darkMode={darkMode} />}
               </div>
-              <Footer darkMode={darkMode} />
+              <Footer darkMode={darkMode} onAboutClick={handleAboutClick} onCoursesClick={handleCoursesClick} />
             </>
           )}
         </>
@@ -101,3 +117,4 @@ function App() {
 }
 
 export default App;
+

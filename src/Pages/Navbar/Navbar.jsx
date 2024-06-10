@@ -32,7 +32,7 @@ function Navbar({ setShowReading, setShowSign, toggleDarkMode, darkMode, setShow
 
   return (
     <>
-      <header>
+      <header className={`Heder1 ${darkMode ? 'dark-mode' : ''}`}>
         <img src={logo} alt="Logo" className="logo" onClick={resetView} />
         <nav ref={navRef}>
           <button className='kk2' onClick={() => windowScroll(1110)}>
@@ -47,6 +47,11 @@ function Navbar({ setShowReading, setShowSign, toggleDarkMode, darkMode, setShow
           <button className="nav-btn close-btn" onClick={hideNavbar}>
             <ion-icon name="close-outline" className="moon"></ion-icon>
           </button>
+          <label className='Toggle tg2'>
+            <input type="checkbox" onChange={toggleDarkMode} checked={darkMode} />
+            <img className='Sun' src={sun} alt="sun" />
+            <img className='Moon' src={moon} alt="moon" />
+          </label>
         </nav>
         <button className="nav-btn" onClick={showNavbar}>
           <ion-icon name="grid-outline"></ion-icon>
@@ -55,7 +60,7 @@ function Navbar({ setShowReading, setShowSign, toggleDarkMode, darkMode, setShow
           <ion-icon name="calendar-outline"></ion-icon> Kurslarga Yozilish
         </button>
         <button className='btn3' onClick={() => setShowSign(true)}>Sign in</button>
-        <label className='Toggle'>
+        <label className='Toggle tg1'>
           <input type="checkbox" onChange={toggleDarkMode} checked={darkMode} />
           <img className='Sun' src={sun} alt="sun" />
           <img className='Moon' src={moon} alt="moon" />

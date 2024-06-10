@@ -89,6 +89,8 @@
   font-size: 15px;
 }
 .Register .SignIn .s_text, .Register .Login .s_text {
+  display: flex;
+  gap: 20px;
   color: rgb(0, 68, 255);
 }
 .Register .SignIn .inputtt, .Register .Login .inputtt {

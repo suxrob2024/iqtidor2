@@ -49,7 +49,7 @@ function Kurslar({ darkMode }) {
                             <div className="kurs_abought">
                                 <h1 className="kurs_name cssanimation leScaleYIn sequence">{info.kursname}</h1>
                                 <h5 className={`kurs_info ${darkMode ? 'dark-mode' : ''}`}>{info.kursinfo}</h5>
-                                <button className='kursregister'>Kursga yozilish</button>
+                                {/* <button className='kursregister'>Kursga yozilish</button> */}
                             </div>
                         </div>
                     ))}

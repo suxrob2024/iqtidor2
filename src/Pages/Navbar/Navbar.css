@@ -2,6 +2,7 @@
     --mainColor: rgb(226, 118, 30);
     --mainColorLight: rgba(23, 106, 231, 0.904);
     --textColor: black;
+    --LightNav: rgb(68, 130, 255);
     --secondaryColor: rgb(255, 187, 0);
     --lightMode: white;
 }
@@ -11,13 +12,15 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    background-color: var(--mainColor);
+    background-image: url(/src/Pages/REG/33f54d6856c9a5336a8f86df8743e240.jpg);
+    /* background-color: var(--LightNav); */
     color: var(--textColor);
     padding: 10px;
 }
 
-.header.dark-mode {
-    background-color: #333333;
+.Heder1.dark-mode {
+    /* background-color: var(--mainColor); */
+    background-image: url(/src/assets/1459.jpg);
     color: #ffffff;
 }
 
@@ -46,12 +49,12 @@ nav a:hover {
     overflow: hidden;
 }
 .Sun{
-    background-color: rgb(238, 255, 0);
+    background-color: rgba(238, 255, 0, 0.555);
     border-radius: 90px;
     box-shadow: 0 0 50px yellow;
 }
 .Moon{
-    background-color: rgb(238, 255, 0);
+    background-color: rgba(238, 255, 0, 0.37);
     border-radius: 90px;
     box-shadow: 0 0 5px yellow;
 }
@@ -143,6 +146,9 @@ nav a:hover {
     transform: rotate(0deg);
     opacity: 1;
 }
+nav .tg2{
+    display: none;
+}
 
 nav {
     width: 500px;
@@ -164,11 +170,17 @@ nav {
 }
 
 @media (max-width: 850px) {
+    .header{
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+    }
     .nav-btn {
         display: block;
     }
     
     .logo {
+        width: 80px;
         z-index: 1;
         transform: scale(2);
     }
@@ -184,7 +196,7 @@ nav {
         align-items: center;
         justify-content: center;
         gap: 15px;
-        background-color: var(--mainColor);
+        background-color: rgba(231, 201, 145, 0.466);
         transform: translateX(-200vh);
     }
     
@@ -196,7 +208,8 @@ nav {
         transition: 1s;
         transform: none;
         height: 450px;
-        width: 300px;
+        width: 100%;
+        z-index: 1;
     }
 }
 
@@ -218,7 +231,10 @@ nav {
     }
 }
 @media (max-width: 500px){
-    .Toggle{
+    .tg1{
         display: none;
+    }
+    nav .tg2{
+        display: block;
     }
 }
