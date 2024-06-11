@@ -52,31 +52,31 @@ function Marketing({ darkMode }) {
             <div className="icon facebook">
               <div className="tooltip">Facebook</div>
               <div className="iconroom">
-                <img className='fab' src="https://cdn-icons-png.flaticon.com/128/3670/3670124.png" alt="Facebook" />
+                <a href="#" target="_blank" rel="noopener noreferrer"><img className='fab' src="https://cdn-icons-png.flaticon.com/128/3670/3670124.png" alt="Facebook" /></a>
               </div>
             </div>
             <div className="icon twitter">
               <div className="tooltip">Twitter</div>
               <div className="iconroom">
-                <img className='fab' src="https://cdn-icons-png.flaticon.com/128/3670/3670127.png" alt="Twitter" />
+                <a href="#" target="_blank" rel="noopener noreferrer"><img className='fab' src="https://cdn-icons-png.flaticon.com/128/3670/3670127.png" alt="Twitter" /></a>
               </div>
             </div>
             <div className="icon instagram">
               <div className="tooltip">Instagram</div>
               <div className="iconroom">
-                <img className='fab' src="https://cdn-icons-png.flaticon.com/128/4138/4138124.png" alt="Instagram" />
+                <a href="https://www.instagram.com/iqtidor_maktabi/" target="_blank" rel="noopener noreferrer"><img className='fab' src="https://cdn-icons-png.flaticon.com/128/4138/4138124.png" alt="Instagram" /></a>
               </div>
             </div>
             <div className="icon telegram">
               <div className="tooltip">Telegram</div>
               <div className="iconroom">
-                <img className='fab' src="https://cdn-icons-png.flaticon.com/128/355/355977.png" alt="Telegram" />
+                <a href="https://web.telegram.org/a/" target="_blank" rel="noopener noreferrer"><img className='fab' src="https://cdn-icons-png.flaticon.com/128/355/355977.png" alt="Telegram" /></a>
               </div>
             </div>
             <div className="icon discord">
               <div className="tooltip">Discord</div>
               <div className="iconroom">
-                <img className='fab' src="https://cdn-icons-png.flaticon.com/128/3670/3670157.png" alt="Discord" />
+                <a href="https://discord.com/" target="_blank" rel="noopener noreferrer"><img className='fab' src="https://cdn-icons-png.flaticon.com/128/3670/3670157.png" alt="Discord" /></a>
               </div>
             </div>
           </div>

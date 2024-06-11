@@ -10,24 +10,24 @@
 
 .rocet {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 0;
+    right: 0;
     z-index: 1000;
     transition: transform 0.3s ease;
     animation: rocketMovement 2s infinite; /* Animatsiyani boshlash */
 }
   
 .R1{
-    background-color: none;
+    background-color: yellow;
     transform: rotateZ(-45deg);
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
 }
 .R2 {
-    background-color: none;
+    background-color: yellow;
     transform: rotateZ(-45deg);
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 00px;
     display: none; /* "Rocet 2" tasvirini avval yopamiz */
 }
 /* Dark mode holatida "Rocet 1" tasviri chiqadi */

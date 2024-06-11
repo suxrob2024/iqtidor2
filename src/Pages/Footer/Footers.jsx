@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './Footer.css'; 
-import logo from './Bgimg/footer-logo.svg'
+import logo from './Bgimg/footer-logo.svg';
 
-function Footer(darkMode) {
+function Footer({ darkMode, onAboutClick, onCoursesClick }) {
   return (
-    <div className={`footerpage ${darkMode ? 'dark-mode' : ''}`} >
+    <div className={`footerpage ${darkMode ? 'dark-mode' : ''}`}>
       <div className="footer">
         <div className="end">
           <div className="altrik a1">
@@ -13,8 +13,8 @@ function Footer(darkMode) {
           </div>
           <div className="altrik a2">
             <div className='alinks'>
-              <a className='End_t' href="#">Akademiya haqida</a>
-              <a href="">Kurslarimiz</a>
+              <a className='End_t' href="#" onClick={onAboutClick}>Akademiya haqida</a>
+              {/* <a className='End_t' href="#" onClick={onCoursesClick}>Kurslarimiz</a> */}
             </div>
             <h1 className='text2'> Iqtidor IT Academy — professional darajadagi yangi bilimlar markazi. Keling va kelajagingizni biz bilan birga quring!</h1>
           </div>

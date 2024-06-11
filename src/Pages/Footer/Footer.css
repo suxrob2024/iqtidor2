@@ -58,7 +58,12 @@
   width: 100%;
   list-style: none;
   display: flex;
+  justify-content: space-around;
+  align-items: center;
   gap: 20px;
+}
+.footerpage .footer .end .altrik .alnks .End_t {
+  color: antiquewhite;
 }
 .footerpage .footer .end .altrik .infopagesall {
   padding-left: 30px;
@@ -69,6 +74,7 @@
 }
 .footerpage .footer .end .altrik .infopagesall .inthe {
   padding-left: 5px;
+  color: bisque;
 }
 
 .footerpage .dark-mode {

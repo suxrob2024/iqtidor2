@@ -23,6 +23,9 @@
   gap: 5px;
   height: 100%;
 }
+.Sectr.dark-mode{
+  background-color: var(--BodyColor);
+}
 
 .ky {
   margin-top: 50px;

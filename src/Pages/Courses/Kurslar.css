@@ -212,6 +212,9 @@
   .Kurslar .Abought_Courses .Kurslar_abought .all .kurs_abought .kurs_info {
     font-size: 15px;
   }
+  .Kurslar .Abought_Courses .Kurslar_abought .all .kurs_abought .kursregister {
+    font-size: 15px;
+  }
 }
 @media (max-width: 425px) {
   .menu_kurslar {
