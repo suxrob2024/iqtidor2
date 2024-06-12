@@ -39,7 +39,7 @@ function Navbar({ setShowReading, setShowSign, toggleDarkMode, darkMode, setShow
             <ion-icon name="grid-outline"></ion-icon> Kurslarimiz
           </button>
           <button className='kk2' onClick={() => windowScroll(1750)}>
-            <ion-icon name="people-circle-outline"></ion-icon> Uqituvchilar
+            <ion-icon name="people-circle-outline"></ion-icon> O`qituvchilar
           </button>
           <button className='kk2'onClick={() => setShowAbought(true)}>
             <ion-icon name="pricetag-outline"></ion-icon> Academiya haqida
